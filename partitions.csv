@@ -1,0 +1,7 @@
+# 16 MB flash，独立 Doom 固件（无 launcher / 无 OTA 槽）。
+# storage 6 MB：shareware doom1.wad 4.2 MB，FAT 开销很小，余量留给存档。
+# Name,   Type, SubType, Offset,   Size,     Flags
+nvs,      data, nvs,     0x9000,   0x6000,
+phy_init, data, phy,     0xf000,   0x1000,
+factory,  app,  factory, 0x10000,  0x200000,
+storage,  data, fat,     0x210000, 0x600000,
